@@ -1,0 +1,98 @@
+/*
+
+    ITFosters: a lightweight jQuery date picker plugin
+
+    Default theme
+
+    copyright (c) 2011 - 2013 Stefan Gabos
+    http://www.itfosters.com/
+
+*/
+
+.ITFS *,
+.ITFS *:after,
+.ITFS *:before  { -moz-box-sizing: content-box !important; -webkit-box-sizing: content-box !important; box-sizing: content-box !important }
+
+.ITFS           { position: absolute; background: #666; border: 3px solid #666; display: none; z-index: 100; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 13px }
+
+.ITFS *         { margin: 0; padding: 0; color: #000; background: transparent; border: none }
+
+/* = GLOBALS
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS table                      { border-collapse: collapse; border-spacing: 0 }
+
+.ITFS td,
+.ITFS th                         { text-align: center; padding: 5px 0 }
+
+.ITFS td                         { cursor: pointer }
+
+.ITFS .dp_daypicker,
+.ITFS .dp_monthpicker,
+.ITFS .dp_yearpicker             { margin-top: 3px }
+
+.ITFS .dp_daypicker td,
+.ITFS .dp_daypicker th,
+.ITFS .dp_monthpicker td,
+.ITFS .dp_yearpicker td         { background: #E8E8E8; width: 30px; border: 1px solid #7BACD2 }
+
+.ITFS,
+.ITFS .dp_header .dp_hover,
+.ITFS .dp_footer .dp_hover { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
+
+/* = HEADER
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_header td             { color: #FFF }
+
+.ITFS .dp_header .dp_previous,
+.ITFS .dp_header .dp_next       { width: 30px }
+
+.ITFS .dp_header .dp_caption    { font-weight: bold }
+.ITFS .dp_header .dp_hover      { background: #222; color: #FFF }
+.ITFS .dp_header .dp_blocked    { color: #888; cursor: default }
+
+/* = DATEPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_daypicker th              { background: #FFCC33 }
+.ITFS td.dp_not_in_month            { background: #F3F3F3; color: #CDCDCD; cursor: default }
+.ITFS td.dp_not_in_month_selectable { background: #F3F3F3; color: #CDCDCD; cursor: pointer }
+.ITFS td.dp_weekend                 { background: #D8D8D8 }
+.ITFS td.dp_weekend_disabled        { color: #CCC; cursor: default }
+.ITFS td.dp_selected                { background: #5A4B4B; color: #FFF !important }
+.ITFS td.dp_week_number             { background: #FFCC33; color: #555; cursor: text; font-style: italic }
+
+/* = MONTHPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_monthpicker td    { width: 33% }
+
+/* = YEARPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_yearpicker td     { width: 33% }
+
+/* = FOOTER
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_footer            { margin-top: 3px }
+.ITFS .dp_footer .dp_hover  { background: #222; color: #FFF }
+
+/* = SELECT CURRENT DAY
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_today { color: #FFF; padding: 3px }
+
+/* = CLEAR DATE
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS .dp_clear { color: #FFF; padding: 3px }
+
+/* = SOME MORE GLOBALS (MUST BE LAST IN ORDER TO OVERWRITE PREVIOUS PROPERTIES)
+----------------------------------------------------------------------------------------------------------------------*/
+.ITFS td.dp_current             { color: #C40000 }
+.ITFS td.dp_disabled_current    { color: #E38585 }
+.ITFS td.dp_disabled            { background: #F3F3F3; color: #CDCDCD; cursor: default }
+.ITFS td.dp_hover               { background: #482424; color: #FFF }
+
+/* = ICON
+----------------------------------------------------------------------------------------------------------------------*/
+button.ITFS_Icon                { display: block; position: absolute; width: 16px; height: 16px; background: url('calendar.png') no-repeat left top; text-indent: -9000px; border: none; cursor: pointer; padding: 0; line-height: 0; vertical-align: top }
+button.ITFS_Icon_Disabled       { background-image: url('calendar-disabled.png') }
+
+/* don't set vertical margins! */
+button.ITFS_Icon                { margin: 0 0 0 3px }
+button.ITFS_Icon_Inside         { margin: 0 3px 0 0 }
